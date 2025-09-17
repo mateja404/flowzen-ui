@@ -14,7 +14,7 @@ const Navbar = () => {
             <li className='text-white/70 hover:text-emerald-700 transition-all duration-300'><Link href="#">Cards</Link></li>
           </ul>
         </nav>
-        <Link href={"/login"} className='flex items-center gap-2 pt-3 pb-3 pl-5 pr-5 text-white/80 bg-black border-1 border-zinc-900 absolute right-7 rounded-full hover:border-emerald-700 transition-all duration-300 group overflow-hidden'>Create personal account <div className='arrow w-[24px] h-[24px] overflow-hidden relative flex items-center '><img src={"/arrow.svg"} className='arrow-img w-[17px] h-[17px]'/></div></Link>
+        <Link href={"/login"} className='flex items-center gap-2 pt-3 pb-3 pl-5 pr-5 text-white/80 bg-black border-1 border-zinc-900 absolute right-7 rounded-full hover:border-emerald-700 transition-all duration-300 group overflow-hidden'>Create personal account <div className='arrow w-[24px] h-[24px] overflow-hidden relative flex items-center '><Image alt='arrow' src={"/arrow.svg"} width={17} height={17} className='arrow-img w-[17px] h-[17px]'/></div></Link>
     </header>
   )
 }

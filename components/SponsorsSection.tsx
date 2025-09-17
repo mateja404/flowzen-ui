@@ -47,7 +47,7 @@ const sponsors = [
 const SponsorsSection = () => {
   return (
     <section className='w-full bg-black flex flex-col gap-10 items-center p-10'>
-      <h2 className='text-white/50'>Trusted by the world's most innovative teams</h2>
+      <h2 className='text-white/50'>Trusted by the world&apos;s most innovative teams</h2>
       <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7 place-items-center'>
         {sponsors.map((sponsor, index) => (
           <div key={index} className='flex items-center justify-center border-1 border-zinc-900 p-7 rounded-xl'>
