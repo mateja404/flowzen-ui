@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <header className='w-full h-[100px] fixed flex items-center justify-center top-0 left-0 right-0 z-40 backdrop-blur-lg'>
-        <Link href={"#"} className='font-bold text-emerald-500 text-3xl absolute left-30'>FlowZen</Link>
+    <header className='flex w-full h-[100px] fixed items-center justify-center top-0 left-0 right-0 z-40 backdrop-blur-lg'>
+        <Link href={"#"} className='font-bold text-shadow-md text-emerald-700 text-3xl absolute left-30'>FlowZen</Link>
         <nav className='w-auto inline-block rounded-full pt-3 pb-3 pl-7 pr-7 border-1 border-zinc-900'>
           <ul className='flex flex-row gap-5'>
             <li className='text-white/70 hover:text-emerald-700 transition-all duration-300'><Link href="#">Personal Account</Link></li>
