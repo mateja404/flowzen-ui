@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "FlowZen | Modern way of saving money",
-  description: "Save your money in secure wallet. FlowZen is inspired by young and enthusiastic people with idea to simplify transactions on internet.",
+  description: "Flowzen is a modern banking app designed for Gen Z. It combines smart cash flow tracking with a calm, intuitive experience - because money should flow, and you should stay Zen.",
 };
 
 export default function RootLayout({
