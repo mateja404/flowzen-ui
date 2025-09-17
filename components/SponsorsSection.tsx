@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import Image from "next/image";
 import acmelogo from "../public/acme1.webp";
@@ -8,6 +10,8 @@ import outsidelogo from "../public/outside.webp";
 import apexlogo from "../public/apex.webp";
 import celestianlogo from "../public/celestial.webp";
 import twicelogo from "../public/2twice.webp";
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'motion/react';
 
 const sponsors = [
   {
@@ -45,8 +49,12 @@ const sponsors = [
 ];
 
 const SponsorsSection = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
   return (
-    <section className='w-full bg-black flex flex-col gap-10 items-center p-10'>
+    <motion.section ref={ref} initial={{ opacity: 0, y: 50 }} animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} transition={{ duration: 0.8, ease: 'easeOut' }} className='w-full bg-black flex flex-col gap-10 items-center p-10'>
       <h2 className='text-white/50'>Trusted by the world&apos;s most innovative teams</h2>
       <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7 place-items-center'>
         {sponsors.map((sponsor, index) => (
@@ -55,7 +63,7 @@ const SponsorsSection = () => {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   )
 }
 
