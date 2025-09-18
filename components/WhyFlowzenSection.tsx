@@ -66,7 +66,7 @@ const WhyFlowzenSection = () => {
                 <motion.h1 initial={{ y: 0 }} animate={mouseEnteredThree ? { y: 0, transition: { duration: 0.5 } } : { y: 50, transition: { duration: 1 } }} className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-white text-3xl">Car Loans</motion.h1>
                 <motion.p initial={{ opacity: 1, y: 50, color: "white", filter: 'blur(10px)' }} animate={ mouseEnteredThree ? { opacity: 1, y: 0, color: "white", filter: "blur(0px)" } : { opacity: 0, y: 50, color: "white", filter: 'blur(10px)' } } transition={{ duration: 1 }} className='text-white font-medium'>Flexible and affordable car loans to help you drive your dream vehicle with ease.</motion.p>
               </div>
-              <Image src={car_loans} alt='personal acc image z-1' className={mouseEnteredThree ? 'w-full h-auto m-auto block object-fill' : 'opacity-0 hidden'}/>
+              <Image src={car_loans} alt='personal acc image z-1' className={mouseEnteredThree ? 'w-full h-auto m-auto object-fill absolute z-1' : 'opacity-0 hidden'}/>
               <div className='hero-overlay absolute top-0 left-0 bottom-0 right-0 z-2 w-full h-auto'></div>
             </div>
             <div onMouseEnter={() => setMouseEnteredFour(true)} onMouseLeave={() => setMouseEnteredFour(false)} className='w-full min-h-[300px] lg:w-[40%] lg:h-full overflow-hidden flex relative bg-black border-1 border-zinc-800 lg:border-r-transparent group transition-all duration-300 cursor-pointer'>
