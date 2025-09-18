@@ -49,7 +49,7 @@ const WhyFlowzenSection = () => {
             <Image src={personal_acc} alt='personal acc image z-1' className={mouseEntered ? 'w-full h-auto m-auto block object-fill' : 'opacity-0 hidden'}/>
             <div className='hero-overlay absolute top-0 left-0 bottom-0 right-0 z-2 w-full h-auto'></div>
           </div>
-          <div onMouseEnter={() => setMouseEnteredTwo(true)} onMouseLeave={() => setMouseEnteredTwo(false)} className='w-full lg:w-[60%] h-full overflow-hidden flex relative bg-black border-1 border-zinc-800 lg:border-r-transparent group transition-all duration-300 cursor-pointer'>
+          <div onMouseEnter={() => setMouseEnteredTwo(true)} onMouseLeave={() => setMouseEnteredTwo(false)} className='w-full lg:w-[60%] h-full overflow-hidden flex relative bg-black border-1 border-zinc-800 group transition-all duration-300 cursor-pointer'>
             <div className='z-3 w-[20px] h-[20px] absolute top-3 left-3 border-1 border-white rounded-full bg-transparent group-hover:bg-white transition-all duration-300'></div>
             <div className='z-3 flex flex-col absolute bottom-0 lg:bottom-5 left-0 right-0 gap-3 p-3 cursor-pointer'>
               <motion.h1 initial={{ y: 0 }} animate={mouseEnteredTwo ? { y: 0, transition: { duration: 0.5 } } : { y: 50, transition: { duration: 1 } }} className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-white text-3xl">Personal Loans</motion.h1>
@@ -60,16 +60,16 @@ const WhyFlowzenSection = () => {
           </div>
         </div>
           <div className='w-full lg:w-7xl mx-auto max-w-7xl flex flex-col gap-5 lg:gap-0 lg:flex-row h-1/2'>
-            <div onMouseEnter={() => setMouseEnteredThree(true)} onMouseLeave={() => setMouseEnteredThree(false)} className='w-full min-h-fit lg:w-[60%] lg:h-full overflow-hidden flex relative bg-black border-1 border-zinc-800 lg:border-r-transparent group transition-all duration-300 cursor-pointer'>
+            <div onMouseEnter={() => setMouseEnteredThree(true)} onMouseLeave={() => setMouseEnteredThree(false)} className='w-full min-h-[300px] lg:w-[60%] lg:h-full overflow-hidden flex relative bg-black border-1 border-zinc-800 lg:border-t-transparent group transition-all duration-300 cursor-pointer'>
               <div className='z-3 w-[20px] h-[20px] absolute top-3 left-3 border-1 border-white rounded-full bg-transparent group-hover:bg-white transition-all duration-300'></div>
-              <div className='z-3 flex flex-col absolute bottom-0 lg:bottom-5 left-0 right-0 gap-3 p-3 cursor-pointer'>
+              <div className='z-3 flex flex-col absolute bottom-0 left-0 right-0 gap-3 p-3 cursor-pointer'>
                 <motion.h1 initial={{ y: 0 }} animate={mouseEnteredThree ? { y: 0, transition: { duration: 0.5 } } : { y: 50, transition: { duration: 1 } }} className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-white text-3xl">Car Loans</motion.h1>
                 <motion.p initial={{ opacity: 1, y: 50, color: "white", filter: 'blur(10px)' }} animate={ mouseEnteredThree ? { opacity: 1, y: 0, color: "white", filter: "blur(0px)" } : { opacity: 0, y: 50, color: "white", filter: 'blur(10px)' } } transition={{ duration: 1 }} className='text-white font-medium'>Flexible and affordable car loans to help you drive your dream vehicle with ease.</motion.p>
               </div>
-              <Image src={car_loans} alt='personal acc image z-1' className={mouseEnteredThree ? 'w-full h-auto m-auto object-fill absolute z-1' : 'opacity-0 hidden'}/>
+              <Image src={car_loans} alt='car loans image' className={mouseEnteredThree ? 'w-full h-auto m-auto block object-fill' : 'opacity-0 hidden'}/>
               <div className='hero-overlay absolute top-0 left-0 bottom-0 right-0 z-2 w-full h-auto'></div>
             </div>
-            <div onMouseEnter={() => setMouseEnteredFour(true)} onMouseLeave={() => setMouseEnteredFour(false)} className='w-full min-h-[300px] lg:w-[40%] lg:h-full overflow-hidden flex relative bg-black border-1 border-zinc-800 lg:border-r-transparent group transition-all duration-300 cursor-pointer'>
+            <div onMouseEnter={() => setMouseEnteredFour(true)} onMouseLeave={() => setMouseEnteredFour(false)} className='w-full min-h-[300px] lg:w-[40%] lg:h-full overflow-hidden flex relative bg-black border-1 border-zinc-800 lg:border-t-transparent group transition-all duration-300 cursor-pointer'>
               <div className='z-3 w-[20px] h-[20px] absolute top-3 left-3 border-1 border-white rounded-full bg-transparent group-hover:bg-white transition-all duration-300'></div>
               <div className='z-3 flex flex-col absolute bottom-0 left-0 right-0 gap-3 p-3 cursor-pointer'>
                 <motion.h1 initial={{ y: 0 }} animate={mouseEnteredFour ? { y: 0, transition: { duration: 0.5 } } : { y: 50, transition: { duration: 1 } }} className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-white text-3xl">Cards</motion.h1>
