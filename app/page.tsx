@@ -6,7 +6,6 @@ import WhyFlowzenSection from "@/components/WhyFlowzenSection";
 export default function Home() {
   return (
     <main className="w-full lg:h-full bg-black flex flex-col">
-      <Navbar/>
       <HeroSection/>
       <SponsorsSection/>
       <WhyFlowzenSection/>
